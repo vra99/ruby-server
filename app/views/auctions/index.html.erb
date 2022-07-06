@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Auctions</title>
+            <%= javascript_include_tag('application.js') %>
+        </head>
+
+        <body>
+            <div class="container">
+                <% @auctions.map do |row| %>
+                    <table class="table-auction">
+                        <thead class="header-auction">
+                            <tr class="column-auction">
+                                <th class="column-auction">Name</th>
+                                <th class="column-auction">Item ID</th>
+                                <th class="column-auction">Seller ID</th>
+                                <th class="column-auction">Winner ID</th>
+                                <th class="column-auction">Winning Bid</th>
+                            </tr>
+                        </thead>
+                        <tbody class="body-auction">
+                            <tr class="column-auction">
+                                <td class="column-auction"><%= row[:name] %></td>
+                                <td class="column-auction"><%= row[:item_id] %></td>
+                                <td class="column-auction"><%= row[:seller_id] %></td>
+                                <td class="column-auction"><%= row[:winner_id] %></td>
+                                <td class="column-auction"><%= row[:winning_bid] %></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <% end %>
+            </div>
+        </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+

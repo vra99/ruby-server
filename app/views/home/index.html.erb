@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Auctions</title>
+            <%= javascript_include_tag('application.js') %>
+        </head>
+
+        <body>
+            <div class="container">
+                <h1> Please upload your file </h1>
+                <form action="/auctions" method="post" enctype="multipart/form-data" id="auction-form">
+                    <input type="file" name="file" id="file"/>
+                    <input type="submit" value="Upload" id="upload-button"/>
+                </form>
+            </div>
+        </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
